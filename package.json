@@ -1,0 +1,25 @@
+{
+  "name": "discord-botv2",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lyall A",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lyall-A/Discord-BotV2.git"
+  },
+  "keywords": [
+    "discord"
+  ],
+  "bugs": {
+    "url": "https://github.com/Lyall-A/Discord-BotV2/issues"
+  },
+  "homepage": "https://github.com/Lyall-A/Discord-BotV2#readme",
+  "description": "",
+  "dependencies": {
+    "ws": "^8.13.0"
+  }
+}
