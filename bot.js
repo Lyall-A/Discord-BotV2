@@ -1,4 +1,5 @@
 const global = require(`./global`);
 global.init().then(() => {
-    const { config, secret } = global;
+    const { config, secret, functions } = global;
+    functions.log("info");
 });
