@@ -1,6 +1,9 @@
 module.exports = {
+    discordApiUrl: "https://discord.com/api/v10",
+    debug: true,
     logs: {
         // Default values
+        includeTimestamp: false,
         timestampSuffix: ":",
         timestampBgColor: "gray",
         typePrefix: "[",
@@ -12,6 +15,25 @@ module.exports = {
             info: {
                 typeBgColor: "cyan",
                 textColor: "cyan"
+            },
+            debug: {
+                typeBgColor: "gray",
+                textColor: "gray",
+                debug: true
+            },
+            http: {
+                typeBgColor: "blue",
+                textColor: "blue",
+                debug: true
+            },
+            fatal: {
+                typeBgColor: "red",
+                textColor: "red",
+                fatal: true
+            },
+            error: {
+                typeBgColor: "yellow",
+                textColor: "yellow"
             }
         }
     }

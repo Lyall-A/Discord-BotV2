@@ -1,6 +1,5 @@
 module.exports = (color, bg) => {
     if (!color) return;
-
     switch (color.toLowerCase()) {
         case "black"    : bg ? color = "\x1b[40m"   : color = "\x1b[30m"; break;
         case "red"      : bg ? color = "\x1b[41m"   : color = "\x1b[31m"; break;
@@ -10,8 +9,7 @@ module.exports = (color, bg) => {
         case "magenta"  : bg ? color = "\x1b[45m"   : color = "\x1b[35m"; break;
         case "cyan"     : bg ? color = "\x1b[46m"   : color = "\x1b[36m"; break;
         case "white"    : bg ? color = "\x1b[47m"   : color = "\x1b[37m"; break;
-        case "gray"     : bg ? color = "\x1b[100m"  : color =  "\x1b[90m"; break;
+        case "gray"     : bg ? color = "\x1b[100m"  : color = "\x1b[90m"; break;
     }
-
     return color || "";
 }
