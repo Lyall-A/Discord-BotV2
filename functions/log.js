@@ -30,10 +30,8 @@ module.exports = (text = "No text provided! You should probably fix that", type 
     
     const output = `${includeTimestamp ? `${r}${timestampColor}${timestampBgColor}${timestampPrefix}${timestamp()}${timestampSuffix}${r} ` : ""}${typeColor}${typeBgColor}${typePrefix}${type}${typeSuffix}${r} ${textColor}${textBgColor}${textPrefix}${text}${textSuffix}${dontReset ? "" : r}`;
     
-    if (write) {
-        loadingText();
-        logWrite(output);
-    }
+    loadingText();
+    if (write) logWrite(output);
     if ((logs.types[type]?.fatal || options.fatal || logs.fatal)) return process.exit(1);
     return output;
 }

@@ -1,6 +1,6 @@
 module.exports = {
     discordApiUrl: "https://discord.com/api/v10",
-    debug: true,
+    debug: false,
     logs: {
         // Default values
         includeTimestamp: false,
